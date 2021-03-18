@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<title>x86 Assembly Register Listesi | Yazıwin</title>
+	<link rel="stylesheet" type="text/css" href="//yaziwin.c1.biz/style.css">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Assembly,Nasıl Yapılır,Yazılım,Yazıwin,Intel x86,NASM,Register,emu8086">
+	<meta name=”description” content="Assembly Register Listesi">
+	<style type="text/css">
+		.regaciklama {
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<a href="http://yaziwin.c1.biz"><img src="http://yaziwin.c1.biz/globalresimler/logo.png" width="15%" alt="logo"></a><br>
+	<a href="../assembly/" style="font-size: 30px;">Ders listesi</a>
+	<center>
+		<h1>x86 Assembly Register Listesi</h1><i>Yazar: <a href="http://yaziwin.c1.biz/balyedi.html">balyedi</a></i>
+		<hr>
+		<p>Burda yazılan registerların bilgileri çoğunlukla benim defterimden alınmıştır.</p>
+		<br>
+		<br>
+	</center>
+	<h1>(AX) Accumulator(Akümülatör) Registeri</h1>
+	<p class="regaciklama">Aritmetik İşlemlerde Kullanılır.</p>
+	<h1>(CX) Count(Sayaç) Registeri</h1>
+	<p class="regaciklama">Kaydırma/Döndürme Talimatlarında ve Döngülerde kullanılır.</p>
+	<h1>(DX) Data Registeri</h1>
+	<p class="regaciklama">Aritmetik İşlemlerde ve G/Ç(I/O) İşlemlerinde kullanılır.</p>
+	<h1>(BX) Base Registeri:</h1>
+	<p class="regaciklama">Verilere İşaretçi olarak kullanılır.Örneğin:</p>
+	<pre>
+mesajbir: db "Ben bir yaziyim"
+
+mov bx, mesajbir ;BX'e mesajbir'in bulunduğu hafıza adresini taşıdık
+;eğer [mesajbir] yani köşeli parantez içine yazsaydık mesajbir'in yazısını taşırdı ve bir uyarı alırdık(nedeni yazının çoklu bayt olması ve registerlerin tek bayt tutabilmesi)
+	</pre>
+	<center><h1>Segment Registerleri</h1><p>Diğer önceki 4 register klasik registerlerdir.burdakiler segmenttir.</p></center>
+	<h1>(BP) Stack Base Pointer(Yığın Tabanı İşaretçisi) Registeri</h1>
+	<h1>(SP) Stack Pointer(Yığın İşaretçisi) Registeri</h1>
+	<h1>(SI) Source Index(Kaynak dizini) Registeri</h1>
+	<p class="regaciklama">Akış İşlemlerinde bir kaynağa işaretçi olarak kullanılır.</p>
+	<h1>(DI) Destination Index(Hedef Dizin) Registeri</h1>
+	<p class="regaciklama">Akış İşlemlerinde bir kaynağa işaretçi olarak kullanılır.</p>
+	<br>
+	<center><h2>NOT:</h2><b>
+		Bütün registerlere 16-bit ve 32-bit Modunda Erişilebilir.<br>
+		16-bit Modunda,registerler yukarıdaki iki harfli kısltması ile Tanımlanır.<br>
+		32-bit Modunda,iki harfli kısaltmasının başına E eklenir (örn:AX,EAX).AX 16-bit EAX ise 32-bit Bir Registerdir.
+	</b></center>
+</body>
+</html>

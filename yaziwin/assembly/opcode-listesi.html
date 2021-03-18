@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<title>x86 Assembly Instruction Listesi | Yazıwin</title>
+	<link rel="stylesheet" type="text/css" href="http://yaziwin.c1.biz/style.css">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Assembly,Nasıl Yapılır,Yazılım,Yazıwin,Intel x86,NASM,Instruction Listesi,emu8086">
+	<meta name=”description” content="Assembly Instruction Listesi">
+	<style type="text/css">
+		.cevap {font-size: 23px;}
+	</style>
+</head>
+<body>
+	<a href="http://yaziwin.c1.biz"><img src="http://yaziwin.c1.biz/globalresimler/logo.png" width="15%" alt="logo"></a><br>
+	<a href="../assembly/" style="font-size: 30px;">Ders listesi</a>
+	<br>
+	<br>
+	<center><h1>x86 Assembly Register Listesi</h1><i>Çeviren: <a href="http://yaziwin.c1.biz/balyedi.html">balyedi</a></i><hr><h1>Değişkenleri değiştiren Instructionlar:</h1></center>
+	<h1>MOV:</h1><p class="cevap">Bir değeri bir değere taşır.Örnek:MOV AX, DX <small>;AX'e DX'in değerini taşır.</small></p><br>
+	<h1>XCHG:</h1><p class="cevap">Değerleri değiş tokuş eder.Örnek:XCHG AX, DX <small>;AX'in değerini DX'e,DX'in değerinide AX'e taşır.</small></p><br>
+	<h1>XOR:</h1><p class="cevap">Eğer iki değerde aynıysa 0 değerini,değilse 1 değerini ilk değere atar.Örnek:XOR AX, AX <small>;AX'i 0 yapar.</small></p><br>
+	<h1>INC:</h1><p class="cevap">Tanımlanan değeri bir yükseltir.Örnek:INC AX <small>;AX'i 10'dan 11 yapar.</small></p><br>
+	<h1>DEC:</h1><p class="cevap">Tanımlanan değeri bir azaltır.Örnek:DEC AX <small>;AX'i 10'dan 9 yapar.</small></p><br>
+	<h1>ADD:</h1><p class="cevap">Tanımlanan değeri tanımlanan 2. değer kadar yükseltir.Örnek:ADD AX, 24 <small>;AX'i 10'dan 34 yapar.</small></p><br>
+	<h1>SUB:</h1><p class="cevap">Tanımlanan değeri tanımlanan 2. değer kadar azaltır.Örnek:SUB AX, 20 <small>;AX'i 50'den 30 yapar.</small></p><br>
+	<center><h1>Normal Instructionlar:</h1></center>
+	<h1>INT:</h1><p class="cevap">Interrupt çağırır.Örnek:INT 10h <small>;hex 10 sayısına atanmış interrputı çağırır(hex 10 video servisleri).</small></p><br>
+	<hr>
+	<center><p>Kaynakça: <a href="https://en.wikipedia.org/wiki/X86_instruction_listings">Wikipedia</a></p></center>
+</body>
+</html>
