@@ -13,7 +13,7 @@ var i; i = 0;
 
 setInterval(() => {
     const rainbowtext = document.querySelectorAll(".rainbow")
-     for (var i = 0; i < rainbowtext.length; i++) {
+     for (var forloop = 0; forloop < rainbowtext.length; forloop++) {
           rainbowtext[i].style.color = `rgb(${hslToRgb(i, 1, 0.5)[0]},${hslToRgb(i, 1, 0.5)[1]},${hslToRgb(i, 1, 0.5)[2]})`
      }
     //document.getElementById('RainbowText').style.color = `rgb(${hslToRgb(i, 1, 0.5)[0]},${hslToRgb(i, 1, 0.5)[1]},${hslToRgb(i, 1, 0.5)[2]})`
