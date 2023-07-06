@@ -12,3 +12,10 @@ body {
 	border: 3px solid green;
 	padding: 10px;
 }
+
+.reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active  {
+  text-decoration: none;
+  color: inherit;
+  outline: 0;
+  cursor: auto;
+}
